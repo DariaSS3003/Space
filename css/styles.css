@@ -179,6 +179,14 @@ body {
     padding: 45px 0;
 }
 
+.menu {
+    display: block;
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
 .menu__list {
     display: flex;
     gap: 93px;
@@ -190,6 +198,16 @@ body {
     line-height: 48px;
     font-size: 28px;
     font-family: 'Creatball', Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.menu__link {
+    transition-duration: 2s;
+    transition-property: all;
+    transition-delay: 0.5s;
+    transition-timing-function: linear;
 }
 
 /* Chapter 1 */
@@ -373,13 +391,9 @@ body {
     margin-top: 165px;
 }
 
-.team__comets {
-    position: absolute;
-}
 
 .team__planet {
-    position: absolute;
-    right: 142px;
+    object-fit: contain;
 }
 
 /* Chapter 4 */
